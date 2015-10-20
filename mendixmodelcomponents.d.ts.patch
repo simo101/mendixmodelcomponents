@@ -1,0 +1,7 @@
+--- ./mendixmodelcomponents.d.ts    Wed Oct 14 09:19:05 2015
++++ ./mendixmodelcomponents.d-new.ts    Wed Oct 14 09:19:31 2015
+@@ -1,4 +1,3 @@
+-/// <reference path="typings/tsd.d.ts" />
+ import { IModel, projects, domainmodels, pages, microflows, texts } from "mendixmodelsdk";
+ import when = require('when');
+ export declare function createEntity(domainModel: domainmodels.DomainModel, name: string, xLoc: number, yLoc: number): domainmodels.Entity;

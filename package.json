@@ -1,0 +1,21 @@
+{
+  "name": "mendixmodelcomponents",
+  "version": "0.8.1",
+  "description": "",
+  "main": "mendixmodelcomponents.js",
+  "typings": "mendixmodelcomponents",
+  "scripts": {
+    "build": "npm install && tsd install && tsc && patch -p0 < mendixmodelcomponents.d.ts.patch"
+  },
+  "author": "Mendix",
+  "license": "MIT",
+  "devDependencies": {
+    "tsd": "^0.6.5",
+    "typescript": "^1.6.2"
+  },
+  "dependencies": {
+    "mendixmodelsdk": "0.8.1",
+    "mobservable": "1.0.0",
+    "when": "^3.7.3"
+  }
+}
