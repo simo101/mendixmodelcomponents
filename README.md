@@ -1,8 +1,11 @@
-# Mendix Model Components - useful components to generate Mendix app models with the Mendix Model SDK
+# Mendix Model Components
+Useful components to generate Mendix app models with the Mendix Model SDK
 
 ## Usage
 
-In your own project, run:
+You do not need to directly clone this source code repository to be able to use it, because we have published an npm package.
+
+Instead, in your own project, run:
 
 	npm install mendixmodelcomponents
 
