@@ -30,6 +30,21 @@ import when = require('when');
 
 /*
  *
+ * PROJECT STRUCTURE
+ *
+ */
+
+export function createModule(project: projects.IProject, name: string): projects.Module {
+	const mxModule = new projects.Module(project);
+	mxModule.domainModel = new domainmodels.DomainModel(mxModule);
+
+	mxModule.name = name;
+
+	return mxModule;
+}
+
+/*
+ *
  * DOMAIN MODEL
  *
  */

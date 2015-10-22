@@ -4,4 +4,4 @@
 -/// <reference path="typings/tsd.d.ts" />
  import { IModel, projects, domainmodels, pages, microflows, texts } from "mendixmodelsdk";
  import when = require('when');
- export declare function createEntity(domainModel: domainmodels.DomainModel, name: string, xLoc: number, yLoc: number): domainmodels.Entity;
+ export declare function createModule(project: projects.IProject, name: string): projects.Module;
