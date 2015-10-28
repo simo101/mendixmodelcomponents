@@ -126,7 +126,7 @@ export function associate(domainModel: domainmodels.DomainModel, source: domainm
  *
  */
 
-export function createListPageForEntity(entity: domainmodels.Entity, sortAttribute: domainmodels.Attribute, layout: pages.Layout, layoutPlaceholderName: string, editPage: pages.Page): void {
+export function createListPageForEntity(entity: domainmodels.Entity, sortAttribute: domainmodels.Attribute, layout: pages.Layout, layoutPlaceholderName: string, editPage: pages.Page): pages.Page {
 	let table = createTableForEntity(entity);
 
 	let listView = createListViewForEntity(entity, sortAttribute);
@@ -136,7 +136,7 @@ export function createListPageForEntity(entity: domainmodels.Entity, sortAttribu
 	let layoutCall = createLayoutCall(layout);
 	let layoutCallArgument = createLayoutCallArgument(layoutCall, layoutPlaceholderName, listView);
 
-	createPage(entity.container.container, entity.name + '_List', entity.name + 's', layoutCall);
+	return createPage(entity.container.container, entity.name + '_List', entity.name + 's', layoutCall);
 }
 
 export function createPageAction(page: pages.Page, pageTitle: string): pages.PageClientAction {
