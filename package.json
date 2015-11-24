@@ -14,7 +14,7 @@
     "typescript": "^1.6.2"
   },
   "dependencies": {
-    "mendixmodelsdk": "0.8.1",
+    "mendixmodelsdk": "../mendixmodelsdk/",
     "mobservable": "1.0.0",
     "when": "^3.7.3"
   }
