@@ -1,6 +1,6 @@
 {
   "name": "mendixmodelcomponents",
-  "version": "0.8.1",
+  "version": "1.0.0-rc.0",
   "description": "",
   "main": "mendixmodelcomponents.js",
   "typings": "mendixmodelcomponents",
@@ -14,7 +14,7 @@
     "typescript": "^1.6.2"
   },
   "dependencies": {
-    "mendixmodelsdk": "0.8.1",
+    "mendixmodelsdk": "1.0.0-rc.0",
     "mobservable": "1.0.0",
     "when": "^3.7.3"
   }
