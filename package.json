@@ -9,6 +9,10 @@
   },
   "author": "Mendix",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mendix/mendixmodelcomponents.git"
+  },
   "devDependencies": {
     "tsd": "^0.6.5",
     "typescript": "^1.6.2"
