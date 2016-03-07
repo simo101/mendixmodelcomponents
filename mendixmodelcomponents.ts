@@ -145,7 +145,7 @@ export class MendixModelComponents {
 		let layoutCall = this.createLayoutCall(layout);
 		let layoutCallArgument = this.createLayoutCallArgument(layoutCall, layoutPlaceholderName, listView);
 
-		return this.createPage(entity.container.container, entity.name + '_List', entity.name + 's', layoutCall);
+		return this.createPage(entity.containerAsDomainModel.containerAsModule, entity.name + '_List', entity.name + 's', layoutCall);
 	}
 
 	createPageAction(page: pages.Page, pageTitle: string): pages.PageClientAction {
@@ -164,7 +164,7 @@ export class MendixModelComponents {
 		let layoutCall = this.createLayoutCall(layout);
 		let layoutCallArgument = this.createLayoutCallArgument(layoutCall, layoutPlaceholderName, dataview);
 
-		return this.createPage(entity.container.container, entity.name + '_Edit', 'Edit ' + entity.name, layoutCall);
+		return this.createPage(entity.containerAsDomainModel.containerAsModule, entity.name + '_Edit', 'Edit ' + entity.name, layoutCall);
 	}
 
 	createPage(module: projects.Module, name: string, title: string, layoutCall: pages.LayoutCall): pages.Page {
@@ -431,8 +431,8 @@ export class MendixModelComponents {
 
 		// Workaround
 
-		let moduleName = attribute.container.container.moduleName;
-		let entityName = attribute.container.name;
+		let moduleName = attribute.containerAsEntity.containerAsDomainModel.moduleName;
+		let entityName = attribute.containerAsEntity.name;
 		let attributeName = attribute.name;
 
 		let qualifiedName = moduleName + '.' + entityName + '.' + attributeName;
