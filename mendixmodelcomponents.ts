@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 ///<reference path="typings/tsd.d.ts" />
 
-import {IModel, projects, domainmodels, pages, microflows, navigation, texts} from "mendixmodelsdk"
+import {IModel, projects, domainmodels, pages, microflows, navigation, texts, Version} from "mendixmodelsdk"
 
 import when = require('when');
 
@@ -303,7 +303,10 @@ export class MendixModelComponents {
 		dataView.widget = widget;
 
 		// DM: 157291: [MM] Default values DataViewSource for DV.dataSource & DataViewControlBar for DV.controlBar missing
-		dataView.controlBar = pages.DataViewControlBar.create(this.model());
+		if(this.model().metaModelVersion.isBefore(new Version(6,7,0))){
+			dataView.controlBar = pages.DataViewControlBar.create(this.model());
+		}
+		
 
 		dataView.noEntityMessage = this.createText('');
 
