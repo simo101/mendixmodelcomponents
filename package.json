@@ -1,25 +1,22 @@
 {
   "name": "mendixmodelcomponents",
-  "version": "2.1.0",
+  "version": "3.1.0",
   "description": "",
   "main": "mendixmodelcomponents.js",
   "typings": "mendixmodelcomponents",
   "scripts": {
-    "build": "npm install && tsd install && tsc && patch -p0 < mendixmodelcomponents.d.ts.patch"
+    "build": "npm install && tsc"
   },
   "author": "Mendix",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mendix/mendixmodelcomponents.git"
-  },
-  "devDependencies": {
-    "tsd": "^0.6.5",
-    "typescript": "^1.6.2"
+    "url": "https://github.com/simo101/mendixmodelcomponents.git"
   },
   "dependencies": {
-    "mendixmodelsdk": "^2.6.3",
-    "mobservable": "^1.0.0",
-    "when": "^3.7.3"
+    "mendixmodelsdk": "^4.55.0",
+    "mendixplatformsdk": "^4.1.1",
+    "@types/when": "^2.4.33",
+    "when": "^3.7.8"
   }
 }
