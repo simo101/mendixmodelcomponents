@@ -1,9 +1,8 @@
 {
   "name": "mendixmodelcomponents",
   "version": "3.1.0",
-  "description": "",
-  "main": "mendixmodelcomponents.js",
-  "typings": "mendixmodelcomponents",
+  "description": "Useful model sdk functions",
+  "main": "index.js",
   "scripts": {
     "build": "npm install && tsc"
   },

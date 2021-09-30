@@ -5,6 +5,6 @@
         "strict": true
     },
 	"files": [
-		"mendixmodelcomponents.ts"
+		"index.ts"
 	]
 }
