@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mendixmodelsdk_1 = require("mendixmodelsdk");
 const when = require("when");
-export class MendixModelComponents {
+class MendixModelComponents {
     constructor(model) {
         this._model = model;
     }
@@ -404,4 +404,3 @@ export class MendixModelComponents {
         return translation;
     }
 }
-

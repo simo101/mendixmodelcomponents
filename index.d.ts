@@ -1,1 +1,1 @@
-export * from "./index";
+export declare type MendixModelComponents = MendixModelComponents<IModel>;

@@ -3,7 +3,7 @@ import {IModel, projects, domainmodels, pages, microflows, navigation, texts, Ve
 import when = require('when');
 
 
-export class MendixModelComponents {
+class MendixModelComponents {
 	private _model: IModel;
 
 	constructor(model: IModel) {
